@@ -1,0 +1,36 @@
+<!--Create a form that includes radio buttons and checkboxes grouped correctly.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code - 6</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Gender</legend>
+                <input type="radio" value="Male" id="male" name="gender" required>
+                <label for="male">Male</label>
+                
+                <input type="radio" value="Female" id="female" name="gender">
+                <label for="female">Female</label>
+
+                <input type="radio" value="other" id="other" name="gender">
+                <label for="other">Other</label>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="HTML">HTML</label>
+            <input type="checkbox" name="Skills" id="HTML" value="HTML">
+            <label for="CSS">CSS</label>
+            <input type="checkbox" name="Skills" id="CSS" value="css">
+            <label for="JS">JS</label>
+            <input type="checkbox" name="Skills" id="JS" value="JS">
+            <label for="python">Python</label>
+            <input type="checkbox" name="Skills" id="python" value="python">
+        </fieldset>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

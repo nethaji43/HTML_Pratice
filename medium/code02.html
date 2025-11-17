@@ -1,0 +1,29 @@
+<!--Create a form with HTML validation attributes-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code - 2</title>
+</head>
+<body>
+    <form action="">
+        <label for="full_name">Full Name: </label>
+        <input type="text" name="full_name" id="full_name" required minlength="3" maxlength="30">
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="phone">Phone Number: </label>
+        <input type="tel" name="phone" id="phone" required pattern="[0-9]{10}">
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" required 
+           minlength="6" maxlength="20"
+           pattern="(?=.*[0-9]).{6,20}"
+           placeholder="6-20 chars, must contain a number">
+        <br>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>
