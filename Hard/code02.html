@@ -1,0 +1,166 @@
+<!--Build a complete job application form using ONLY HTML (NO CSS, NO JS).-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code - 2</title>
+</head>
+<body>
+    <article>
+        <h1>Job Application</h1>
+        <form action="">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" id="fullName">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" pattern="[0-9]{10}">
+                <br>
+                <label for="dateOfBirth">Date of Birth</label>
+                <input type="date" name="dateOfBirth" id="dateOfBirth">
+                <br>
+                <label for="gender">Gender</label>
+                <div>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="gender">Female</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Position Information</legend>
+                <label for="jobRole">Position applying for</label>
+                <select name="jobRole" id="jobRole">
+                    <option value="Python_Developer">Python Developer</option>
+                    <option value="Full_Stack_python_Developer">Full Stack Python Developer</option>
+                    <option value="java_developer">Java Developer</option>
+                    <option value="full_stack_java_developer">Full Stack Java Developer</option>
+                    <option value="web_developer">Web Developer</option>
+                </select>
+                <br>
+                <label for="employment_type">Employment Type</label>
+                <div>
+                    <input type="radio" name="employment_type" id="Full-time">
+                    <label for="Full-time">Full-time</label>
+                    <input type="radio" name="employment_type" id="Part-time">
+                    <label for="Part-time">Part-time</label>
+                    <input type="radio" name="employment_type" id="contract">
+                    <label for="contract">Contract</label>
+                </div>
+                <br>
+                <label for="expectedSalary">Expected Salary</label>
+                <input type="number" name="expectedSalary" id="expectedSalary">
+                <br>
+                <label for="start_date">Available Start Date</label>
+                <input type="date" name="start_date" id="start_date">
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Skills Section</legend>
+                <label for="skills_checkBox">Skills</label>
+                <div>
+                    <input type="checkbox" name="skills_checkBox" id="Python">
+                    <label for="python">Python</label>
+                    <br>
+                    <input type="checkbox" name="skills_checkBox" id="java">
+                    <label for="java">Java</label>
+                    <br>
+                    <input type="checkbox" name="skills_checkBox" id="html">
+                    <label for="html">HTML</label>
+                    <br>
+                    <input type="checkbox" name="skills_checkBox" id="css">
+                    <label for="css">CSS</label>
+                    <br>
+                    <input type="checkbox" name="skills_checkBox" id="javascript">
+                    <label for="javascript">Java Script</label>
+                    <br>
+                    <input type="checkbox" name="skills_checkBox" id="sql">
+                    <label for="sql">MySQL</label>
+                    <br>
+                    <textarea name="skills_checkBox" id="otherthan_check_lisk" rows="6" cols="100" placeholder="Add some more skills if you have"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Work Experience Section</legend>
+                <fieldset>
+                    <legend>Experience 1</legend>
+                    <label for="company_name-1">Company Name</label>
+                    <input type="text" name="company_name-1" id="company_name-1">
+                    <br>
+                    <label for="job_title-1">Job Title</label>
+                    <input type="text" name="job_title-1" id="job_title-1">
+                    <br>
+                    <label for="duration-1">Duration</label>
+                    <div>
+                        <label for="start_date-1">From</label>
+                        <input type="date" name="duration-1" id="start_date-1">
+                        <label for="end_date_1">To</label>
+                        <input type="date" name="duration-1" id="end_date_1">
+                    </div>
+                    <textarea name="summary-1" id="summary-1" placeholder="Tell about your work..." rows="6" cols="100"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Experience 2</legend>
+                    <label for="company_name-2">Company Name</label>
+                    <input type="text" name="company_name-2" id="company_name-2">
+                    <br>
+                    <label for="job_title-2">Job Title</label>
+                    <input type="text" name="job_title-2" id="job_title-2">
+                    <br>
+                    <label for="duration-2">Duration</label>
+                    <div>
+                        <label for="start_date-2">From</label>
+                        <input type="date" name="duration-2" id="start_date-2">
+                        <label for="end_date_1">To</label>
+                        <input type="date" name="duration-2" id="end_date_2">
+                    </div>
+                    <textarea name="summary-2" id="summary-2" placeholder="Tell about your work..." rows="6" cols="100"></textarea>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Education Section</legend>
+                <label for="degree">Degree</label>
+                <input type="text" name="degree" id="degree">
+                <br>
+                <label for="institutionName">Institution name</label>
+                <input type="text" name="institutionName" id="institutionName">
+                <br>
+                <label for="graduationYear">Graduation year</label>
+                <input type="number" name="graduationYear" id="graduationYear">
+            </fieldset>
+            <fieldset>
+                <legend>Document Upload</legend>
+                <label for="resumeUpload">Resume Upload</label>
+                <input type="file" name="resumeUpload" id="resumeUpload">
+                <br>
+                <label for="photoUpload">Photo Upload</label>
+                <input type="file" name="photoUpload" id="photoUpload">
+                <br>
+                <label for="PortfolioWebsite">Portfolio Website</label>
+                <input type="url" name="PortfolioWebsite" id="PortfolioWebsite">
+            </fieldset>
+            <fieldset>
+                <legend>Agreement Section</legend>
+                <input type="checkbox" name="agreement-1" id="agreement-1">
+                <label for="agreement-1">I confirm that the information provided is accurate.</label>
+                <br>
+                <input type="checkbox" name="agreement-2" id="agreement-2">
+                <label for="agreement-2">I agree to the terms & conditions.</label>
+                <br>
+                <label for="sign">Signature</label>
+                <input type="text" name="sign" id="sign">
+                <br>
+                <label for="submission_date">Submission Date</label>
+                <input type="date" name="submission_date" id="submission_date">
+            </fieldset>
+            <input type="button" value="submit">
+            <input type="reset" value="reset">
+        </form>
+    </article>
+</body>
+</html>
